@@ -1,32 +1,23 @@
 import { DarkCloudSection } from "@/components/DarkCloudSection"
-import { Banner } from "@/components/home/Banner"
-import { Calendar } from "@/components/home/Calendar"
-import { Collect } from "@/components/home/Collect"
-import { Cop30 } from "@/components/home/Cop30"
 import { WhatIs } from "@/components/home/WhatIs"
 import { LightGreenSection } from "@/components/LightGreenSection"
+import { Chico } from "@/components/quem-somos/Chico"
+import { WhoWork } from "@/components/quem-somos/WhoWork"
 
 const page = () => {
     return(
         <>
-            <Banner />
-
-            <LightGreenSection>
-                <Calendar />
-            </LightGreenSection>
-
             <DarkCloudSection>
-                <Cop30 />
+                <WhatIs dark={true}/>
             </DarkCloudSection>
 
             <LightGreenSection>
-                <WhatIs />
+                <Chico />
             </LightGreenSection>
 
             <DarkCloudSection>
-                <Collect />
+                <WhoWork />
             </DarkCloudSection>
-
         </>
     )
 }

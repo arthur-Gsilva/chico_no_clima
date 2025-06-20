@@ -30,7 +30,7 @@ export const Chico = () => {
                     <p className="text-lg my-10">
                         O Chico Sabido é um jogo interativo criado em parceria entre a Faculdade SENAC Pernambuco, alunos do curso de Análise e Desenvolvimento de Sistemas e o SEBRAE. <br /><br />
 
-                        Agora, Chico traz consigo um jogo educativo e o "Chiquito", seu joystick exclusivo. A pedido do SEBRAE, o projeto amplia a experiência interativa, permitindo que jogadores testem conhecimentos enquanto Chico reage dinamicamente com carinhas super divertidas. <br /><br />
+                        Agora, Chico traz consigo um jogo educativo e o Chiquito, seu joystick exclusivo. A pedido do SEBRAE, o projeto amplia a experiência interativa, permitindo que jogadores testem conhecimentos enquanto Chico reage dinamicamente com carinhas super divertidas. <br /><br />
                     </p>
 
                     <button className="w-full h-10 bg-[#99E550] text-[#1F1360] border border-[#1F1360] rounded-sm">

@@ -12,7 +12,7 @@ export const Calendar = () => {
     return(
         <section className="">
             <h2>Agenda - Chico no clima</h2>
-            <h5 className='mb-10'>Espaço para acompanhar todas as movimentações do projeto Chico No Clima!</h5>
+            <h5 className='mb-10 text-lg'>Espaço para acompanhar todas as movimentações do projeto Chico No Clima!</h5>
 
             <Swiper
                 spaceBetween={50}

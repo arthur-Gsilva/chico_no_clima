@@ -11,7 +11,9 @@ export const GameItem = ({ game }: { game: GameType }) => {
             <img src={game.image} alt={game.title} className="h-full w-auto max-h-[520px]"/>
 
             <div className="min-h-full flex flex-col justify-between">
-                <h4 className="text-2xl font-bold">{game.title}</h4>
+
+                <h4 className="text-5xl font-bold" style={{ fontFamily: 'pixel' }}>{game.title}</h4>
+
                 <div className="flex flex-col gap-4">
                     <span className="text-lg font-bold">Objetivo:</span> <p>{game.objective}</p>
                 </div>

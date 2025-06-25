@@ -19,6 +19,7 @@
   }
 }
 
+
 @font-face {
   font-family: 'pixel';
   src: url('/fonts/pixel.ttf') format('truetype');
@@ -37,3 +38,12 @@ h2{
   font-size: 48px;
   font-family: 'pixel';
 }
+
+@media (max-width: 768px) {
+  h2{
+  font-size: 32px;
+
+}
+}
+
+

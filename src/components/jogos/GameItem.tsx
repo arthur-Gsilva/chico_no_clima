@@ -1,9 +1,10 @@
 import { GameType } from "@/types/GameType"
+import Link from "next/link"
 
 export const GameItem = ({ game }: { game: GameType }) => {
     return(
         <div 
-            className="flex gap-12 h-full p-8 rounded-lg"
+            className="flex gap-12 h-full p-8 rounded-lg flex-col md:flex-row"
             style={{ backgroundColor: game.blue ? '#492EE5' : "#ADEA73",
                 color: game.blue ? '#fff' : "#000"
             }}
@@ -14,27 +15,33 @@ export const GameItem = ({ game }: { game: GameType }) => {
 
                 <h4 className="text-5xl font-bold" style={{ fontFamily: 'pixel' }}>{game.title}</h4>
 
-                <div className="flex flex-col gap-4">
+                <div className="flex flex-col gap-2">
                     <span className="text-lg font-bold">Objetivo:</span> <p>{game.objective}</p>
                 </div>
-                <div className="flex flex-col gap-4">
+
+                <div className="flex flex-col gap-2 my-6">
                     <span className="text-lg font-bold">Desenvolvido em:</span> <p>{game.date}</p>
                 </div>
 
-                <div className="flex gap-6">
-                    <button 
-                        className="bg-[#ADEA73] p-5 rounded-xl w-1/2 text-xl"
-                        style={{ backgroundColor: game.blue ? '#ADEA73' : '#492EE5', color: game.blue ? '#492EE5' : '#ADEA73'}}
-                    >
-                            Acesse o Jogo!
-                    </button>
-                    {game.gallery &&
+                <div className="flex gap-6 flex-col sm:flex-row">
+                    <Link href={game.link}>
                         <button 
-                        className="bg-[#ADEA73] p-5 rounded-xl w-1/2 text-xl"
-                        style={{ backgroundColor: game.blue ? '#ADEA73' : '#492EE5', color: game.blue ? '#492EE5' : '#ADEA73'}}
-                    >
-                            Acesse a galeria do jogo!
-                    </button>
+                            className="bg-[#ADEA73] p-2 md:p-5 rounded-xl w-full sm:w-1/2 text-xl hover:opacity-70"
+                            style={{ backgroundColor: game.blue ? '#ADEA73' : '#492EE5', color: game.blue ? '#492EE5' : '#ADEA73'}}
+                        >
+                                Acesse o Jogo!
+                        </button>
+                    </Link>
+
+                    {game.gallery &&
+                        <Link href={game.gallery}>
+                            <button 
+                                className="bg-[#ADEA73] p-2 md:p-5 rounded-xl w-full sm:w-1/2 text-xl hover:opacity-70"
+                                style={{ backgroundColor: game.blue ? '#ADEA73' : '#492EE5', color: game.blue ? '#492EE5' : '#ADEA73'}}
+                            >
+                                Acesse a galeria do jogo!
+                            </button>
+                        </Link>
                     }
                 </div>
             </div>

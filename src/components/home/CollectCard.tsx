@@ -1,3 +1,5 @@
+import { IoIosPin } from "react-icons/io";
+
 export const CollectCardPurple = () => {
     return(
         <div className="bg-[#983979] p-2 rounded-xl">
@@ -12,7 +14,10 @@ export const CollectCardPurple = () => {
                 <h5 className="font-bold">Participe e faça parte dessa corrente de inovação e sustentabilidade!</h5>
                 <div className="w-1/2 h-[1px] bg-black mx-auto"></div>
                 <h5 className="text-left font-bold">Ponto de arrecadação:</h5>
-                <h6 className="text-[#D0A4C1] text-left">ICT Senac - Rua do Apolo, 235</h6>
+                <h6 className="text-[#D0A4C1] text-left flex items-center gap-1 pl-3">
+                    <IoIosPin className="text-[#D0A4C1]"/>
+                    ICT Senac - Rua do Apolo, 235
+                </h6>
             </div>
         </div>
     )
@@ -32,8 +37,14 @@ export const CollectCardGreen = () => {
                 <h5 className="font-bold">Participe e faça parte dessa corrente de inovação e sustentabilidade!</h5>
                 <div className="w-1/2 h-[1px] bg-black mx-auto"></div>
                 <h5 className="text-left font-bold">Ponto de arrecadação:</h5>
-                <h6 className="text-[#004924] text-left">Laboratório do Porto Digital - 3º Andar</h6>
-                <h6 className="text-[#004924] text-left">ICT Senac - Rua do Apolo, 235</h6>
+                <h6 className="text-[#004924] text-left flex items-center gap-1 pl-3">
+                    <IoIosPin className="text-[#004924]"/>
+                    Laboratório do Porto Digital - 3º Andar
+                </h6>
+                <h6 className="text-[#004924] text-left flex items-center gap-1 pl-3">
+                    <IoIosPin className="text-[#004924]"/>
+                    ICT Senac - Rua do Apolo, 235
+                </h6>
             </div>
         </div>
     )

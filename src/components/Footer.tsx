@@ -5,10 +5,13 @@ export const Footer = () => {
     return(
         <footer>
             <img src="nuvem-verde.svg" alt="nuvem" className="-mb-1 w-full"/>
+
             <div className="bg-[#004924] py-5">
-                <div className="mx-20">
-                    <div className="flex justify-between items-center">
-                        <img src="logo.svg" alt="Logo do Chico no clima" className="w-1/4"/>
+                <div className="mx-10 md:mx-20">
+                    <div className="flex justify-between items-center flex-col md:flex-row gap-3">
+
+                        <img src="logo.svg" alt="Logo do Chico no clima" className="w-full sm:w-1/2 md:w-1/4"/>
+
                         <div className="text-white flex flex-col gap-12">
                             <h4 className="font-bold text-lg">Saiba mais</h4>
                             <div >

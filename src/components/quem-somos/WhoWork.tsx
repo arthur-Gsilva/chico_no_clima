@@ -17,11 +17,11 @@ export const WhoWork = () => {
     return(
         <div className="flex flex-col items-center gap-12 py-1">
             <div className="flex items-center gap-6">
-                <img src="chiquinho.svg" alt="chiquinho" />
+
                 <h2 className="text-white text-3xl text-center">
                     Quem contribuiu para o Desenvolvimento do <br /> Chico no Clima?
                 </h2>
-                <img src="lila.svg" alt="Lila" />
+           
             </div>
 
             <div className="flex items-center justify-between w-full">
@@ -36,11 +36,12 @@ export const WhoWork = () => {
                     <option value="gestão">Gestão</option>
                     <option value="desenvolvedor">Desenvolvedor</option>
                     <option value="design">Design</option>
+                    <option value="maker">Maker</option>
                     <option value="todos">Todos</option>
                 </select>
             </div>
 
-            <div className="w-full grid grid-cols-4 gap-12">
+            <div className="w-full grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-12">
                 {workers.map((data) => (
                     <WorkerItem key={data.linkedin} worker={data}/>
                 ))}

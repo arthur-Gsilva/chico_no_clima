@@ -1,3 +1,6 @@
+import Link from "next/link"
+import { Button } from "../Button"
+
 export const WhatIs = ({ dark }: { dark?:  boolean}) => {
     return(
         <div className="flex items-center flex-col gap-4" style={{ color: dark ? '#fff' : '#000'}}>
@@ -14,21 +17,22 @@ export const WhatIs = ({ dark }: { dark?:  boolean}) => {
             </div>
 
             {!dark &&
-                <button className="w-[250px] h-10 bg-[#99E550] text-[#1F1360] border border-[#1F1360] rounded-sm">
-                    Saiba mais sobre o projeto
-                </button>
+                <Button 
+                    link=""
+                    title="Saiba mais sobre o projeto"
+                />
             }
             
 
             <div className="mt-6 flex items-center gap-8">
-                <div className="flex flex-col items-center gap-2">
+                <Link href={'https://www.instagram.com/chiconoclima/'} target="_blank" className="flex flex-col items-center gap-2">
                     <img src="instagram.svg" alt="icone do instagram" />
                     <p>Instagram</p>
-                </div>
-                <div className="flex flex-col items-center gap-2">
+                </Link>
+                <Link href={'https://www.linkedin.com/company/chiconoclima/'} target="_blank" className="flex flex-col items-center gap-2">
                     <img src="linkedin.svg" alt="icone do Linkedin" />
                     <p>Linkedin</p>
-                </div>
+                </Link>
             </div>
         </div>
     )

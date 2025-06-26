@@ -1,3 +1,5 @@
+import { Button } from "../Button"
+
 export const Chico = () => {
     return(
         <div>
@@ -17,9 +19,10 @@ export const Chico = () => {
                         Suas expressões em pixel art refletem emoções que se conectam de maneira lúdica e significativa com os visitantes, promovendo, por meio do motor de jogos Godot, uma reflexão sobre a importância da sustentabilidade e da valorização cultural.
                     </p>
 
-                    <button className="w-full h-10 bg-[#99E550] text-[#1F1360] border border-[#1F1360] rounded-sm">
-                        Conheça a história do Chico
-                    </button>
+                    <Button 
+                        link="https://projeto-chico.vercel.app/"
+                        title="Conheça sobre a história do Chico"
+                    />
                 </div>
             </div>
 
@@ -33,9 +36,10 @@ export const Chico = () => {
                         Agora, Chico traz consigo um jogo educativo e o Chiquito, seu joystick exclusivo. A pedido do SEBRAE, o projeto amplia a experiência interativa, permitindo que jogadores testem conhecimentos enquanto Chico reage dinamicamente com carinhas super divertidas. <br /><br />
                     </p>
 
-                    <button className="w-full h-10 bg-[#99E550] text-[#1F1360] border border-[#1F1360] rounded-sm">
-                        Conheça a história do Chico
-                    </button>
+                    <Button 
+                        link="https://chico-site.netlify.app/"
+                        title="Conheça sobre a história do Chico"
+                    />
                 </div>
 
                 <img src="ChicoNoSebrae2.svg" alt="Chico no SEBRAE" />

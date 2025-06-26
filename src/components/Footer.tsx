@@ -1,5 +1,6 @@
 import { FaInstagram } from "react-icons/fa";
 import { CiLinkedin } from "react-icons/ci";
+import Link from "next/link";
 
 export const Footer = () => {
     return(
@@ -17,14 +18,19 @@ export const Footer = () => {
                             <div >
                                 <button className="">Repositório do site</button>
                                 
-                                <div className="flex items-center gap-2 my-5">
-                                    <FaInstagram className="text-xl"/>
-                                    Conheça nosso Instagram
-                                </div>
-                                <div className="flex items-center gap-2 ">
-                                    <CiLinkedin className="text-xl"/>
-                                    Conheça nosso Linkedin
-                                </div>
+                                <Link href={'https://www.instagram.com/chiconoclima/'} target="_blank">
+                                    <div className="flex items-center gap-2 my-5">
+                                        <FaInstagram className="text-xl"/>
+                                        Conheça nosso Instagram
+                                    </div>
+                                </Link>
+
+                                <Link href={'https://www.linkedin.com/company/chiconoclima/'} target="_blank">
+                                    <div className="flex items-center gap-2 ">
+                                        <CiLinkedin className="text-xl"/>
+                                        Conheça nosso Linkedin
+                                    </div>
+                                </Link>
                             </div>
                         </div>
                     </div>

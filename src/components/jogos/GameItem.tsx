@@ -26,7 +26,7 @@ export const GameItem = ({ game }: { game: GameType }) => {
                 <div className="flex gap-6 flex-col sm:flex-row">
                     <Link href={game.link} target="_blank">
                         <button 
-                            className="bg-[#ADEA73] p-2 md:p-5 rounded-xl w-full text-xl hover:opacity-70"
+                            className="bg-[#ADEA73] cursor-pointer p-2 md:p-5 rounded-xl w-full text-xl hover:opacity-70"
                             style={{ backgroundColor: game.blue ? '#ADEA73' : '#492EE5', color: game.blue ? '#492EE5' : '#ADEA73'}}
                         >
                                 Acesse o Jogo!
@@ -36,7 +36,7 @@ export const GameItem = ({ game }: { game: GameType }) => {
                     {game.gallery &&
                         <Link href={game.gallery} target="_blank">
                             <button 
-                                className="bg-[#ADEA73] p-2 md:p-5 rounded-xl w-full  text-xl hover:opacity-70"
+                                className="bg-[#ADEA73] cursor-pointer p-2 md:p-5 rounded-xl w-full  text-xl hover:opacity-70"
                                 style={{ backgroundColor: game.blue ? '#ADEA73' : '#492EE5', color: game.blue ? '#492EE5' : '#ADEA73'}}
                             >
                                 Acesse a galeria do jogo!

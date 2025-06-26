@@ -1,6 +1,5 @@
 import { CalendarType } from "@/types/CalendarType"
 import { CiLocationOn } from "react-icons/ci";
-import { FaLongArrowAltRight } from "react-icons/fa";
 import { Button } from "../Button";
 
 type Props = {

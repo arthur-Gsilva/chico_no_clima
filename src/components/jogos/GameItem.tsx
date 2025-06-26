@@ -9,7 +9,7 @@ export const GameItem = ({ game }: { game: GameType }) => {
                 color: game.blue ? '#fff' : "#000"
             }}
         >
-            <img src={game.image} alt={game.title} className="h-full w-auto max-h-[520px]"/>
+            <img src={game.image} alt={game.title} className="h-full w-auto max-h-[520px] max-w-[520px]"/>
 
             <div className="min-h-full flex flex-col justify-between">
 
@@ -24,9 +24,9 @@ export const GameItem = ({ game }: { game: GameType }) => {
                 </div>
 
                 <div className="flex gap-6 flex-col sm:flex-row">
-                    <Link href={game.link}>
+                    <Link href={game.link} target="_blank">
                         <button 
-                            className="bg-[#ADEA73] p-2 md:p-5 rounded-xl w-full sm:w-1/2 text-xl hover:opacity-70"
+                            className="bg-[#ADEA73] p-2 md:p-5 rounded-xl w-full text-xl hover:opacity-70"
                             style={{ backgroundColor: game.blue ? '#ADEA73' : '#492EE5', color: game.blue ? '#492EE5' : '#ADEA73'}}
                         >
                                 Acesse o Jogo!
@@ -34,9 +34,9 @@ export const GameItem = ({ game }: { game: GameType }) => {
                     </Link>
 
                     {game.gallery &&
-                        <Link href={game.gallery}>
+                        <Link href={game.gallery} target="_blank">
                             <button 
-                                className="bg-[#ADEA73] p-2 md:p-5 rounded-xl w-full sm:w-1/2 text-xl hover:opacity-70"
+                                className="bg-[#ADEA73] p-2 md:p-5 rounded-xl w-full  text-xl hover:opacity-70"
                                 style={{ backgroundColor: game.blue ? '#ADEA73' : '#492EE5', color: game.blue ? '#492EE5' : '#ADEA73'}}
                             >
                                 Acesse a galeria do jogo!

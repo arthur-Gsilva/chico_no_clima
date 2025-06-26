@@ -7,6 +7,13 @@ import { WhoWork } from "@/components/quem-somos/WhoWork"
 const page = () => {
     return(
         <>
+
+
+            <div className="bg-gray-100 w-full h-[40vh] md:h-[75vh] -mb-16 bg-center bg-cover"
+            style={{ backgroundImage: 'url(banner-img.png)' }}
+        >
+
+            </div>
             <DarkCloudSection>
                 <WhatIs dark={true}/>
             </DarkCloudSection>

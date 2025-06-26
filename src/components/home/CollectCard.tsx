@@ -3,7 +3,9 @@ import { IoIosPin } from "react-icons/io";
 export const CollectCardPurple = () => {
     return(
         <div className="bg-[#983979] p-2 rounded-xl">
-            <div className="bg-green-300 w-full h-[200px]"></div>
+            <div className="bg-green-300 w-full h-[200px] bg-cover bg-center"
+                style={{ backgroundImage: 'url(https://smartlap.com.br/wp-content/uploads/2021/10/shutterstock_2033981429-1.jpg)' }}
+            ></div>
 
             <div className="flex flex-col gap-4 text-center mt-4">
                 <h4 className="font-bold text-xl">Coleta dos matérais eletrônicos</h4>
@@ -26,7 +28,9 @@ export const CollectCardPurple = () => {
 export const CollectCardGreen = () => {
     return(
         <div className="bg-[#8BD049] p-2 rounded-xl">
-            <div className="bg-green-700 w-full h-[200px]"></div>
+            <div className="bg-green-700 w-full h-[200px] bg-cover bg-center"
+                style={{ backgroundImage: 'url(https://s5.static.brasilescola.uol.com.br/be/2024/05/tres-pessoas-carregando-caixas-com-materiais-para-reciclagem.jpg)' }}
+            ></div>
 
             <div className="flex flex-col gap-4 text-center mt-4">
                 <h4 className="font-bold text-xl">Coleta dos matérais eletrônicos</h4>

@@ -13,7 +13,7 @@ export const games: GameType[] = [
     {
         title: 'Lila em Defesa do Mangue',
         date: '2025',
-        link: 'https://jogodochico.pythonanywhere.com/',
+        link: 'https://fisocame.itch.io/chiconoclima-jogo',
         objective: 'Chico Sabido é um jogo de quiz educativo que se adapta a qualquer tipo de tema, permitindo que jogadores testem conhecimentos enquanto o Caranguejo Chico reage dinamicamente, além de oferecer um modo selfie para reações divertidas.',
         image: 'l1la-jogo.jpg',
         blue: false

@@ -1,5 +1,6 @@
 import { CalendarType } from "@/types/CalendarType"
 import { CiLocationOn } from "react-icons/ci";
+import { FaLongArrowAltRight } from "react-icons/fa";
 
 type Props = {
     item: CalendarType
@@ -8,15 +9,16 @@ type Props = {
 export const CalendarCard = ({ item }: Props) => {
     return(
         <div className="bg-[#422AD0] p-2 text-white">
-            <div>
+            <div className="relative">
                 <div 
                     className="w-full h-46 bg-top bg-cover rounded-xl"
                     style={{ backgroundImage: `url(${item.imagem})` }}
                 >
 
                 </div>
-                <div>
-
+                <div className="absolute bottom-0 left-0 flex text-xl" style={{ fontFamily: 'pixel' }}>
+                    <div className="bg-white w-10 h-10 flex items-center justify-center  text-[#006733] border-r-1">{item.dia}</div>
+                    <div className="bg-white w-10 h-10 items-center flex justify-center  text-[#006733]">{item.mes}</div>
                 </div>
             </div>
 
@@ -28,8 +30,9 @@ export const CalendarCard = ({ item }: Props) => {
                 </p>
             </div>
 
-            <button className="bg-white text-black w-full mt-4 py-3 text-sm cursor-pointer">
+            <button className="bg-[#99E550] text-black w-full mt-4 py-3 text-sm cursor-pointer flex items-center gap-2 justify-center">
                 Ir para o evento
+                <FaLongArrowAltRight />
             </button>
         </div>
     )

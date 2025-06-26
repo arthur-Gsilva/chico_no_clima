@@ -1,6 +1,6 @@
 const page = () => {
     return(
-        <div>xxx</div>
+        <div className="text-center py-10">Em Desenvolvido!</div>
     )
 }
 

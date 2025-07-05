@@ -8,7 +8,7 @@ export const Footer = () => {
             <img src="nuvem-verde.svg" alt="nuvem" className="-mb-1 w-full"/>
 
             <div className="bg-[#004924] py-5">
-                <div className="mx-10 md:mx-20">
+                <div className="mx-10 md:mx-20 xl:mx-auto max-w-7xl">
                     <div className="flex justify-between items-center flex-col md:flex-row gap-3">
 
                         <img src="logo.svg" alt="Logo do Chico no clima" className="w-full sm:w-1/2 md:w-1/4"/>

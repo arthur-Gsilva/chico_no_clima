@@ -1,7 +1,7 @@
 export const Partners = () => {
     return(
         <section className="bg-white w-full">
-            <div className="py-15 flex items-center flex-col mx-10 md:mx-20 gap-20">
+            <div className="py-15 flex items-center flex-col mx-10 md:mx-20 gap-20 xl:mx-auto max-w-7xl">
                 <div className="w-full">
                     <h2 className="text-center text-2xl mb-12">Parceiros</h2>
                     <div className="flex justify-around flex-wrap gap-12">

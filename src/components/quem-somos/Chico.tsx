@@ -7,7 +7,7 @@ export const Chico = () => {
                 <img src="ChicoNoSebrae.svg" alt="Chico no SEBRAE" />
 
                 <div className="text-right">
-                    <h2 className="text-3xl font-bold">Como o Carangueijo Chico surgiu?</h2>
+                    <h2 className="text-3xl font-bold">Como o Caranguejo Chico surgiu?</h2>
 
                     <p className="my-5  md:text-lg md:my-10">
                         O caranguejo CHICO é uma peça de metareciclagem que surgiu da vontade de dar nova vida a materiais que, para muitos, seriam apenas resíduos eletrônicos. A primeira inspiração para a construção dessa obra veio do caranguejo, ícone da cultura pernambucana, e foi amplificada pela mídia do Rec’n’Play. <br /><br />
